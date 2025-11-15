@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Gloria Hallelijah, Arial, sans-serif;
+    font-family: 'Gloria Hallelijah', Arial, sans-serif;
     box-sizing: border-box;
 }
 
@@ -73,7 +73,7 @@
   font-size: 28px;
   font-weight: bold;
   color: wheat;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Gloria Hallelujah', Arial, Helvetica;
 }
 .navbar ul {
   list-style: none;
@@ -300,7 +300,7 @@ a button{
       border: 1px solid #ccc;
       border-radius: 5px;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: 'Gloria Hallelujah', Arial, Helvetica;
       font-size: 14px;
     }
 
@@ -350,7 +350,7 @@ a button{
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 460px) {
       body {
         background-color: grey;
       }
@@ -614,5 +614,6 @@ i{
     font-size: 20px;
   }
 }
+
 
 
