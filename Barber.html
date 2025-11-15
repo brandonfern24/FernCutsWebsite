@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fern's Barber Website</title>
+    <link rel="icon" type="image/png" href="Images/Fern.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap">
+<script src="https://kit.fontawesome.com/8dd1bd5ce1.js" crossorigin="anonymous"></script>
+<script src="calendarForm.js"></script>
+<script src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+</head>
+<body>
+    <!--Brandon Fernandez
+        12/11/2022
+        this page is for the new company I started to run. This website will allow you to schedule a date and see when I would be available to give haircuts.-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+    <div class="header">
+        <nav class="navbar">
+        <div class="logo">FernCut’s </div>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#appointment">Appointment</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+
+        <div class="content">
+            <h1>FernCut's Barbershop</h1>
+            <h3>Enjoy My Services</h3>
+            <a href="#appointment"><button>Book Now</button></a>
+        </div>
+
+    </div>
+
+    <section id="about">
+        <div class="about-container">
+            <h2 id="pageHeading"><u id="underlineColor">ABOUT</u></h2>
+
+            <div class="about-flex">
+                <img src="Images/logo.jpg" alt="Fern Photo">
+
+                <div class="about-text">
+                    <p>I’m a 23-year-old barber with 5 years of experience, dedicated to delivering clean, sharp cuts at an affordable price. My goal is to make every client look their best without breaking the bank — <span id="serviceColor">my services are as low as $10-$30</span>. Book with me and leave feeling confident every time.</p>
+                    <p>I specialize in <span id="serviceColor">fades, trims, line-ups, beard grooming, and shape-ups</span>. Whether you need a crisp fade, a fresh edge, or a clean beard finish, I focus on precision and detail to give you the exact look you want.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="appointment">
+        <div class="appointment">
+            <h2 id="pageHeading"><u id="underlineColor">APPOINTMENTS</u></h2>
+        <div class="container">
+    <!-- Google Calendar Iframe -->
+    <iframe src="https://calendar.google.com/calendar/embed?src=293a45ffa92c6a39aa7432795e7a1c24a382a2a7cfc8141bcf1a0d808e7da465%40group.calendar.google.com&ctz=America%2FNew_York" frameborder="0" scrolling="no"></iframe>
+
+    <!-- Appointment Form -->
+    <form id="calendarForm">
+      <h2>Schedule an Appointment</h2>
+
+      <div class="form-row">
+        <div>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="First Name" required>
+        </div>
+        <div>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email@gmail.com" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div>
+          <label for="date">Select Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div>
+          <label for="time">Select Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+      </div>
+
+      <div class="form-full">
+        <label for="note">Services</label>
+        <textarea id="note" name="note" placeholder="Add any Services or details..."></textarea>
+      </div>
+
+      <button type="submit">Make Appointment</button>
+    </form>
+  </div></div>
+</section>
+
+<section id="contact" class="contact fade-in">
+            <h2 id="pageHeading"><u id="underlineColor">CONTACT</u></h2>
+        <div class="contact-inner">
+
+        <p class="location">
+            Barbershop Location: <strong>South Amboy, New Jersey</strong>
+        </p>
+
+        <p class="address">
+            <a href="https://goo.gl/maps/2nR5" target="_blank" rel="noopener">
+                22F Westminster Blvd, South Amboy, NJ 08879
+            </a>
+        </p>
+
+        <div class="hours">
+            <h3>Hours</h3>
+            <table>
+                <tbody>
+                    <tr><td>Monday:</td><td>9:00am – 9:00pm</td></tr>
+                    <tr><td>Tuesday:</td><td>9:00am – 9:00pm</td></tr>
+                    <tr><td>Wednesday:</td><td>Closed</td></tr>
+                    <tr><td>Thursday:</td><td>9:00am – 9:00pm</td></tr>
+                    <tr><td>Friday:</td><td>9:00am – 9:00pm</td></tr>
+                    <tr><td>Saturday:</td><td>9:00am – 9:00pm</td></tr>
+                    <tr><td>Sunday:</td><td>Closed</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="contact-links">
+            <a href="mailto:Brandonfern24@gmail.com">
+                <i class="fas fa-envelope"></i> Brandonfern24@gmail.com
+            </a>
+
+            <a href="tel:5412280824">
+                <i class="fas fa-phone"></i> 541-228-0824
+            </a>
+
+            <a href="https://www.instagram.com/24.fern/" target="_blank" rel="noopener">
+                <i class="fab fa-instagram"></i> @24.fern
+            </a>
+        </div>
+
+        <p class="credit">Site by Brandon Fernandez</p>
+    </div>
+</section>
+
+    <script src="button.js"></script>
+</body>
+</html>
